@@ -1,0 +1,189 @@
+/* ============================================
+   BuyDomain BOT — API Page
+   ============================================ */
+
+.api-hero {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-2xl);
+  align-items: start;
+}
+
+.api-hero__info h2 {
+  margin-bottom: var(--space-md);
+}
+
+.api-hero__info p {
+  margin-bottom: var(--space-lg);
+}
+
+.api-hero__features {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  margin-bottom: var(--space-xl);
+}
+
+.api-hero__feature {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  font-size: var(--font-size-base);
+  color: var(--color-text-secondary);
+}
+
+.api-hero__feature svg {
+  width: 20px;
+  height: 20px;
+  color: var(--color-accent);
+  flex-shrink: 0;
+}
+
+/* ---- Code Window ---- */
+.code-window {
+  background: var(--color-code-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.code-window__header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: var(--space-md) var(--space-lg);
+  background: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.code-window__dots {
+  display: flex;
+  gap: 6px;
+}
+
+.code-window__dot {
+  width: 12px;
+  height: 12px;
+  border-radius: var(--radius-full);
+  background: var(--color-text-tertiary);
+  opacity: 0.3;
+}
+
+.code-window__dot:first-child { background: #ef4444; opacity: 0.7; }
+.code-window__dot:nth-child(2) { background: #f59e0b; opacity: 0.7; }
+.code-window__dot:nth-child(3) { background: #22c55e; opacity: 0.7; }
+
+.code-window__title {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-tertiary);
+  font-family: var(--font-family-mono);
+}
+
+.code-window__body {
+  padding: var(--space-lg);
+  overflow-x: auto;
+}
+
+.code-window__body pre {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font-size: var(--font-size-sm);
+}
+
+.code-window__body code {
+  background: none;
+  padding: 0;
+  color: var(--color-text-secondary);
+}
+
+/* ---- Syntax Highlighting (minimal) ---- */
+.code-keyword { color: #c084fc; }
+.code-string { color: #34d399; }
+.code-comment { color: var(--color-text-tertiary); font-style: italic; }
+.code-property { color: #60a5fa; }
+.code-number { color: #fb923c; }
+.code-method { color: #f9a8d4; }
+
+/* ---- Endpoint Table ---- */
+.endpoint-table {
+  width: 100%;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  background: var(--color-bg-elevated);
+}
+
+.endpoint-table th,
+.endpoint-table td {
+  padding: var(--space-md) var(--space-lg);
+  text-align: left;
+  font-size: var(--font-size-sm);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.endpoint-table th {
+  background: var(--color-surface);
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-xs);
+  text-transform: uppercase;
+  letter-spacing: var(--letter-spacing-wide);
+  color: var(--color-text-tertiary);
+}
+
+.endpoint-table tr:last-child td {
+  border-bottom: none;
+}
+
+.endpoint-table tr:hover td {
+  background: var(--color-surface);
+}
+
+.endpoint-method {
+  display: inline-block;
+  padding: 0.15rem 0.5rem;
+  border-radius: var(--radius-sm);
+  font-family: var(--font-family-mono);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-semibold);
+}
+
+.endpoint-method--get {
+  background: rgba(34, 197, 94, 0.1);
+  color: #22c55e;
+}
+
+.endpoint-method--post {
+  background: rgba(59, 130, 246, 0.1);
+  color: #3b82f6;
+}
+
+.endpoint-method--put {
+  background: rgba(245, 158, 11, 0.1);
+  color: #f59e0b;
+}
+
+.endpoint-method--delete {
+  background: rgba(239, 68, 68, 0.1);
+  color: #ef4444;
+}
+
+.endpoint-path {
+  font-family: var(--font-family-mono);
+  color: var(--color-text-primary);
+}
+
+/* ---- Responsive ---- */
+@media (min-width: 768px) {
+  .api-hero {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 767px) {
+  .endpoint-table {
+    display: block;
+    overflow-x: auto;
+  }
+}

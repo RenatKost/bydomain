@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Возможности — BuyDomain BOT</title>
+  <meta name="description" content="Все возможности BuyDomain BOT: покупка доменов, DNS, Cloudflare, SSL, редиректы, API, массовые операции и оплата криптовалютой.">
+  <link rel="canonical" href="https://buydomainbot.com/features/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://buydomainbot.com/features/">
+  <meta property="og:title" content="Возможности — BuyDomain BOT">
+  <meta property="og:description" content="Все возможности BuyDomain BOT: покупка доменов, DNS, Cloudflare, SSL, редиректы, API и оплата криптой.">
+  <meta property="og:image" content="https://buydomainbot.com/assets/images/og-default.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Возможности — BuyDomain BOT">
+  <meta name="twitter:description" content="Все возможности BuyDomain BOT: покупка доменов, DNS, Cloudflare, SSL, редиректы, API и оплата криптой.">
+  <meta name="twitter:image" content="https://buydomainbot.com/assets/images/og-default.png">
+
+  <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32.png">
+  <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+
+  <script>
+    (function(){var t=localStorage.getItem('theme');if(!t){t=window.matchMedia&&window.matchMedia('(prefers-color-scheme:light)').matches?'light':'dark'}document.documentElement.setAttribute('data-theme',t)})();
+  </script>
+
+  <link rel="stylesheet" href="/assets/css/variables.css">
+  <link rel="stylesheet" href="/assets/css/reset.css">
+  <link rel="stylesheet" href="/assets/css/base.css">
+  <link rel="stylesheet" href="/assets/css/layout.css">
+  <link rel="stylesheet" href="/assets/css/components.css">
+  <link rel="stylesheet" href="/assets/css/header.css">
+  <link rel="stylesheet" href="/assets/css/footer.css">
+  <link rel="stylesheet" href="/assets/css/animations.css">
+  <link rel="stylesheet" href="/assets/css/utilities.css">
+  <link rel="stylesheet" href="/assets/css/pages/features.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Главная", "item": "https://buydomainbot.com/"},
+      {"@type": "ListItem", "position": 2, "name": "Возможности", "item": "https://buydomainbot.com/features/"}
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- SHARED HEADER START -->
+  <header class="header" role="banner">
+    <div class="header__inner">
+      <a href="/" class="header__logo" aria-label="BuyDomain BOT — Главная">
+        <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="32" height="32" rx="8" fill="url(#lg)"/><path d="M8 16.5L13 21.5L24 10.5" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><defs><linearGradient id="lg" x1="0" y1="0" x2="32" y2="32"><stop stop-color="#3b82f6"/><stop offset="1" stop-color="#8b5cf6"/></linearGradient></defs></svg>
+        <span class="header__logo-text">BuyDomain</span>
+      </a>
+      <nav class="nav" aria-label="Основная навигация">
+        <a href="/" class="nav__link" data-i18n="nav.home">Главная</a>
+        <a href="/features/" class="nav__link" aria-current="page" data-i18n="nav.features">Возможности</a>
+        <a href="/pricing/" class="nav__link" data-i18n="nav.pricing">Цены</a>
+        <a href="/api/" class="nav__link" data-i18n="nav.api">API</a>
+        <a href="/faq/" class="nav__link" data-i18n="nav.faq">FAQ</a>
+        <a href="/support/" class="nav__link" data-i18n="nav.support">Поддержка</a>
+      </nav>
+      <div class="header__actions">
+        <button class="lang-toggle" aria-label="Switch language">EN</button>
+        <button class="theme-toggle" aria-label="Переключить тему">
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        </button>
+        <a href="https://t.me/BuyDomain_BOT" class="btn btn--primary btn--sm header__cta" target="_blank" rel="noopener" data-track="click_telegram_start" data-track-location="header" data-i18n="hero.cta">Запустить бота</a>
+        <button class="menu-toggle" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobile-nav">
+          <svg class="icon-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+          <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+    <div class="mobile-nav" id="mobile-nav">
+      <a href="/" class="mobile-nav__link" data-i18n="nav.home">Главная</a>
+      <a href="/features/" class="mobile-nav__link" aria-current="page" data-i18n="nav.features">Возможности</a>
+      <a href="/pricing/" class="mobile-nav__link" data-i18n="nav.pricing">Цены</a>
+      <a href="/api/" class="mobile-nav__link" data-i18n="nav.api">API</a>
+      <a href="/faq/" class="mobile-nav__link" data-i18n="nav.faq">FAQ</a>
+      <a href="/support/" class="mobile-nav__link" data-i18n="nav.support">Поддержка</a>
+      <div class="mobile-nav__cta">
+        <a href="https://t.me/BuyDomain_BOT" class="btn btn--primary btn--full" target="_blank" rel="noopener" data-track="click_telegram_start" data-track-location="mobile-nav" data-i18n="hero.cta">Запустить бота</a>
+      </div>
+    </div>
+  </header>
+  <!-- SHARED HEADER END -->
+
+  <main class="page-content">
+    <div class="container">
+
+      <nav class="breadcrumb" aria-label="Хлебные крошки">
+        <a href="/" data-i18n="nav.home">Главная</a>
+        <span class="breadcrumb__sep" aria-hidden="true">›</span>
+        <span data-i18n="nav.features">Возможности</span>
+      </nav>
+
+      <div class="page-header">
+        <h1>Все возможности BuyDomain&nbsp;BOT</h1>
+        <p>Полный набор инструментов для регистрации и управления доменами прямо в Telegram</p>
+      </div>
+
+      <!-- Feature 1: Domain Purchase -->
+      <div class="feature-block animate-on-scroll">
+        <div class="feature-block__header">
+          <div class="feature-block__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          </div>
+          <div>
+            <h2 class="feature-block__title">Поиск и покупка доменов</h2>
+            <p class="feature-block__subtitle">Регистрация домена за считанные секунды</p>
+          </div>
+        </div>
+        <div class="feature-block__content">
+          <p class="feature-block__desc">Отправьте боту доменное имя — он мгновенно проверит доступность и покажет цену. Купите домен в 1–2 клика с оплатой криптовалютой.</p>
+          <ul class="feature-block__list">
+            <li>Мгновенная проверка доступности домена</li>
+            <li>Поддержка сотен доменных зон: .com, .net, .org, .dev, .io, .app и др.</li>
+            <li>Покупка в 1–2 клика без лишних шагов</li>
+            <li>Автоматическая регистрация после оплаты</li>
+            <li>Возможность проверки нескольких зон одновременно</li>
+          </ul>
+          <div class="feature-tags">
+            <span class="tag">.com</span>
+            <span class="tag">.net</span>
+            <span class="tag">.org</span>
+            <span class="tag">.dev</span>
+            <span class="tag">.io</span>
+            <span class="tag">.app</span>
+            <span class="tag">.xyz</span>
+            <span class="tag">.me</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Feature 2: DNS -->
+      <div class="feature-block animate-on-scroll">
+        <div class="feature-block__header">
+          <div class="feature-block__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <div>
+            <h2 class="feature-block__title">Управление DNS записями</h2>
+            <p class="feature-block__subtitle">Полный контроль над DNS вашего домена</p>
+          </div>
+        </div>
+        <div class="feature-block__content">
+          <p class="feature-block__desc">Добавляйте, редактируйте и удаляйте DNS записи прямо в Telegram. Поддержка всех основных типов записей.</p>
+          <ul class="feature-block__list">
+            <li>A записи — привязка домена к IPv4 адресу</li>
+            <li>AAAA записи — привязка к IPv6 адресу</li>
+            <li>CNAME — создание алиасов</li>
+            <li>MX записи — настройка почтовых серверов</li>
+            <li>TXT записи — верификация, SPF, DKIM</li>
+            <li>SRV записи — настройка сервисов</li>
+            <li>NS записи — делегирование зон</li>
+            <li>Быстрое применение изменений</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Feature 3: NS -->
+      <div class="feature-block animate-on-scroll">
+        <div class="feature-block__header">
+          <div class="feature-block__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </div>
+          <div>
+            <h2 class="feature-block__title">Управление Nameserver</h2>
+            <p class="feature-block__subtitle">Смена NS серверов в пару кликов</p>
+          </div>
+        </div>
+        <div class="feature-block__content">
+          <p class="feature-block__desc">Меняйте nameserver-серверы домена для использования стороннего DNS-хостинга, Cloudflare или любого другого провайдера.</p>
+          <ul class="feature-block__list">
+            <li>Смена NS на любые серверы</li>
+            <li>Поддержка до 4+ NS серверов</li>
+            <li>Быстрое обновление через регистратора</li>
+            <li>Интеграция с Cloudflare NS</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Feature 4: Cloudflare -->
+      <div class="feature-block animate-on-scroll">
+        <div class="feature-block__header">
+          <div class="feature-block__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9z"/></svg>
+          </div>
+          <div>
+            <h2 class="feature-block__title">Интеграция с Cloudflare</h2>
+            <p class="feature-block__subtitle">Защита и ускорение вашего домена</p>
+          </div>
+        </div>
+        <div class="feature-block__content">
+          <p class="feature-block__desc">Подключайте домены к Cloudflare одним кликом. Управляйте зонами, proxy-настройками и защитой без выхода из Telegram.</p>
+          <ul class="feature-block__list">
+            <li>Подключение домена к Cloudflare зоне</li>
+            <li>Управление Proxy (оранжевое/серое облако)</li>
+            <li>Настройка правил безопасности</li>
+            <li>SSL/TLS конфигурация через Cloudflare</li>
+            <li>Кеширование и оптимизация</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Feature 5: SSL -->
+      <div class="feature-block animate-on-scroll">
+        <div class="feature-block__header">
+          <div class="feature-block__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          </div>
+          <div>
+            <h2 class="feature-block__title">SSL сертификаты</h2>
+            <p class="feature-block__subtitle">HTTPS для вашего домена</p>
+          </div>
+        </div>
+        <div class="feature-block__content">
+          <p class="feature-block__desc">Получите бесплатный SSL сертификат или управляйте существующим. Обеспечьте безопасное соединение для ваших пользователей.</p>
+          <ul class="feature-block__list">
+            <li>Бесплатные SSL сертификаты</li>
+            <li>Автоматическое продление</li>
+            <li>Управление сертификатами</li>
+            <li>Поддержка wildcard SSL</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Feature 6: Redirects -->
+      <div class="feature-block animate-on-scroll">
+        <div class="feature-block__header">
+          <div class="feature-block__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 10 20 15 15 20"/><path d="M4 4v7a4 4 0 0 0 4 4h12"/></svg>
+          </div>
+          <div>
+            <h2 class="feature-block__title">Редиректы</h2>
+            <p class="feature-block__subtitle">Перенаправление трафика</p>
+          </div>
+        </div>
+        <div class="feature-block__content">
+          <p class="feature-block__desc">Настройте перенаправления для вашего домена: с www на без www, между HTTPS протоколами, или URL forwarding на другие адреса.</p>
+          <ul class="feature-block__list">
+            <li>301 (постоянный) и 302 (временный) редиректы</li>
+            <li>www ↔ non-www перенаправление</li>
+            <li>HTTP → HTTPS принудительное перенаправление</li>
+            <li>URL forwarding на внешние адреса</li>
+            <li>Маскировка URL (URL masking)</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Feature 7: Bulk -->
+      <div class="feature-block animate-on-scroll">
+        <div class="feature-block__header">
+          <div class="feature-block__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="16" height="12" rx="2"/><path d="M6 3h16v12"/></svg>
+          </div>
+          <div>
+            <h2 class="feature-block__title">Массовые операции</h2>
+            <p class="feature-block__subtitle">Управление портфелем доменов</p>
+          </div>
+        </div>
+        <div class="feature-block__content">
+          <p class="feature-block__desc">Выполняйте операции сразу для нескольких доменов: проверка, регистрация, обновление DNS и другие действия одной командой.</p>
+          <ul class="feature-block__list">
+            <li>Массовая проверка доступности доменов</li>
+            <li>Пакетная регистрация</li>
+            <li>Обновление DNS для нескольких доменов</li>
+            <li>Экспорт списка доменов</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Feature 8: API -->
+      <div class="feature-block animate-on-scroll">
+        <div class="feature-block__header">
+          <div class="feature-block__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div>
+          <div>
+            <h2 class="feature-block__title">API для разработчиков</h2>
+            <p class="feature-block__subtitle">Автоматизация и интеграция</p>
+          </div>
+        </div>
+        <div class="feature-block__content">
+          <p class="feature-block__desc">Используйте наш RESTful API для автоматизации работы с доменами. Интегрируйте покупку и управление доменами в свои приложения и сервисы.</p>
+          <ul class="feature-block__list">
+            <li>RESTful JSON API</li>
+            <li>Полная документация эндпоинтов</li>
+            <li>API-ключи через бота</li>
+            <li>Вебхуки для уведомлений</li>
+            <li>Rate limiting и авторизация через Bearer token</li>
+          </ul>
+          <div class="mt-lg">
+            <a href="/api/" class="link-arrow">
+              <span>Документация API</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Feature 9: Crypto -->
+      <div class="feature-block animate-on-scroll">
+        <div class="feature-block__header">
+          <div class="feature-block__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          </div>
+          <div>
+            <h2 class="feature-block__title">Оплата криптовалютой</h2>
+            <p class="feature-block__subtitle">Быстрые и безопасные платежи</p>
+          </div>
+        </div>
+        <div class="feature-block__content">
+          <p class="feature-block__desc">Оплачивайте домены криптовалютой через CryptoBot. Быстрое подтверждение, прозрачные комиссии.</p>
+          <ul class="feature-block__list">
+            <li>Оплата через CryptoBot (встроен в Telegram)</li>
+            <li>Поддержка BTC, ETH, USDT, TON и других</li>
+            <li>Мгновенное подтверждение оплаты</li>
+            <li>Инвойсы с детализацией</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Feature 10: No KYC -->
+      <div class="feature-block animate-on-scroll">
+        <div class="feature-block__header">
+          <div class="feature-block__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          </div>
+          <div>
+            <h2 class="feature-block__title">Минимум данных</h2>
+            <p class="feature-block__subtitle">Простая регистрация без лишней бюрократии</p>
+          </div>
+        </div>
+        <div class="feature-block__content">
+          <p class="feature-block__desc">Для работы с ботом не нужно проходить сложные процедуры верификации. Минимум данных для регистрации доменов — начните работу за секунды.</p>
+          <ul class="feature-block__list">
+            <li>Минимум данных при регистрации</li>
+            <li>Без загрузки документов</li>
+            <li>Быстрый старт через Telegram</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Feature 11: Async -->
+      <div class="feature-block animate-on-scroll">
+        <div class="feature-block__header">
+          <div class="feature-block__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg>
+          </div>
+          <div>
+            <h2 class="feature-block__title">Асинхронная обработка</h2>
+            <p class="feature-block__subtitle">Ничего не зависает</p>
+          </div>
+        </div>
+        <div class="feature-block__content">
+          <p class="feature-block__desc">Все операции выполняются асинхронно. Бот сообщит о результате, как только операция будет завершена — можете продолжать работу.</p>
+          <ul class="feature-block__list">
+            <li>Неблокирующие операции</li>
+            <li>Уведомления о завершении</li>
+            <li>Параллельная обработка запросов</li>
+            <li>Стабильная работа без задержек</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <div class="section">
+        <div class="cta-banner animate-on-scroll">
+          <h2>Попробуйте все возможности</h2>
+          <p>Запустите бота и начните управлять доменами прямо сейчас</p>
+          <a href="https://t.me/BuyDomain_BOT" class="btn btn--lg" target="_blank" rel="noopener" data-track="click_telegram_start" data-track-location="features_cta">
+            <svg viewBox="0 0 24 24" fill="currentColor" style="width:1.25em;height:1.25em;"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.2-.08-.06-.19-.04-.28-.02-.12.03-2.02 1.28-5.69 3.77-.54.37-1.03.55-1.47.54-.48-.01-1.41-.27-2.1-.5-.85-.28-1.52-.43-1.46-.91.03-.25.38-.51 1.05-.78 4.12-1.79 6.87-2.97 8.26-3.54 3.93-1.62 4.75-1.9 5.28-1.91.12 0 .37.03.54.17.14.12.18.28.2.45-.01.06.01.24 0 .37z"/></svg>
+            <span>Запустить бота в Telegram</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- SHARED FOOTER START -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="/" class="footer__logo">
+            <svg viewBox="0 0 32 32" fill="none" aria-hidden="true" width="28" height="28"><rect width="32" height="32" rx="8" fill="url(#lg2)"/><path d="M8 16.5L13 21.5L24 10.5" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><defs><linearGradient id="lg2" x1="0" y1="0" x2="32" y2="32"><stop stop-color="#3b82f6"/><stop offset="1" stop-color="#8b5cf6"/></linearGradient></defs></svg>
+            <span>BuyDomain</span>
+          </a>
+          <p class="footer__desc" data-i18n="footer.desc">Покупка и управление доменами через Telegram бота. Быстро, безопасно, с оплатой криптовалютой.</p>
+        </div>
+        <div>
+          <h4 class="footer__col-title" data-i18n="footer.nav">Навигация</h4>
+          <div class="footer__links">
+            <a href="/" class="footer__link" data-i18n="nav.home">Главная</a>
+            <a href="/features/" class="footer__link" data-i18n="nav.features">Возможности</a>
+            <a href="/pricing/" class="footer__link" data-i18n="nav.pricing">Цены</a>
+            <a href="/api/" class="footer__link" data-i18n="nav.api">API</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer__col-title" data-i18n="footer.services">Возможности</h4>
+          <div class="footer__links">
+            <a href="/faq/" class="footer__link" data-i18n="nav.faq">FAQ</a>
+            <a href="/support/" class="footer__link" data-i18n="nav.support">Поддержка</a>
+            <a href="https://t.me/BuyDomain_BOT" class="footer__link" target="_blank" rel="noopener">Telegram Bot</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer__col-title" data-i18n="footer.legal">Юридическое</h4>
+          <div class="footer__links">
+            <a href="/legal/terms/" class="footer__link" data-i18n="footer.terms">Условия использования</a>
+            <a href="/legal/privacy/" class="footer__link" data-i18n="footer.privacy">Политика конфиденциальности</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copy" data-i18n="footer.copy">© 2026 BuyDomain BOT. Все права защищены.</p>
+        <div class="footer__bottom-links">
+          <a href="/legal/terms/">Условия использования</a>
+          <a href="/legal/privacy/">Политика конфиденциальности</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- SHARED FOOTER END -->
+
+  <div class="sticky-cta">
+    <a href="https://t.me/BuyDomain_BOT" class="btn btn--primary" target="_blank" rel="noopener" data-track="click_telegram_start" data-track-location="sticky" data-i18n="hero.cta">Запустить бота</a>
+  </div>
+
+  <script src="/assets/js/theme.js" defer></script>
+  <script src="/assets/js/nav.js" defer></script>
+  <script src="/assets/js/smooth-scroll.js" defer></script>
+  <script src="/assets/js/lang-toggle.js" defer></script>
+  <script src="/assets/js/analytics.js" defer></script>
+  <script src="/assets/js/scroll-tracker.js" defer></script>
+  <script src="/assets/js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+/* ============================================
+   BuyDomain BOT — Support Page
+   ============================================ */
+
+.support-channels {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-lg);
+  margin-bottom: var(--space-2xl);
+}
+
+.support-channel {
+  background: var(--color-bg-elevated);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-2xl);
+  text-align: center;
+  transition: all var(--transition-normal);
+}
+
+.support-channel:hover {
+  border-color: var(--color-border-hover);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.support-channel__icon {
+  width: 64px;
+  height: 64px;
+  border-radius: var(--radius-full);
+  background: var(--color-accent-subtle);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-inline: auto;
+  margin-bottom: var(--space-lg);
+  color: var(--color-accent);
+}
+
+.support-channel__icon svg {
+  width: 32px;
+  height: 32px;
+}
+
+.support-channel h3 {
+  margin-bottom: var(--space-sm);
+}
+
+.support-channel p {
+  font-size: var(--font-size-sm);
+  margin-bottom: var(--space-lg);
+}
+
+.support-info {
+  background: var(--color-bg-elevated);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl);
+}
+
+.support-info__item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  padding: var(--space-md) 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.support-info__item:last-child {
+  border-bottom: none;
+}
+
+.support-info__item svg {
+  width: 20px;
+  height: 20px;
+  color: var(--color-accent);
+  flex-shrink: 0;
+}
+
+.support-info__item span {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+}
+
+@media (min-width: 480px) {
+  .support-channels {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .support-channels--3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
